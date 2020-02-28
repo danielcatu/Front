@@ -1,0 +1,42 @@
+html,
+body {
+  background-color: bisque;
+}
+body {
+  #back {
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+  .card {
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #icon {
+    height: 100px;
+  }
+  #hr {
+    border: 1px solid black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#left-side {
+  margin-right: 184px;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  margin-left: 184px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}

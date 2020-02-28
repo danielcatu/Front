@@ -1,0 +1,51 @@
+@import "input";
+
+html,
+body {
+  font-family: "Open Sans";
+  height: 100%;
+}
+.row > div {
+  padding: 0;
+}
+body {
+  display: flex;
+  background-color: rgb(226, 217, 217);
+  #back {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+    margin: 3%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    #background {
+      background: url("https://www.elnacional.com/wp-content/uploads/2019/12/Primer-gasoducto-.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+
+  .col {
+    padding: 0;
+  }
+}
+.card {
+  height: 100%;
+  margin-left: auto;
+  .card-body {
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: none;
+  }
+}
+form {
+  margin: auto;
+}
