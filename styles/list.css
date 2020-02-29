@@ -67,11 +67,17 @@ body #icon {
   background-color: white;
   display: inline-flex;
   padding: 15px;
-  -webkit-box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 7px 0.5px #92b9df;
+  -moz-box-shadow: 0px 0px 7px 0.5px #92b9df;
+  box-shadow: 0px 0px 7px 0.5px #92b9df;
+}
+#card:hover {
+  -webkit-box-shadow: 0px 0px 7px 0.5px rgba(51, 58, 145, 0.75);
+  -moz-box-shadow: 0px 0px 7px 0.5px rgba(51, 58, 145, 0.75);
+  box-shadow: 0px 0px 7px 0.5px rgba(51, 58, 145, 0.75);
 }
 #card h6 {
+  color: black;
   font-size: 0.6rem;
 }
 #card .col {

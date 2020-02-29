@@ -3,10 +3,6 @@ body {
   font-family: "Open Sans";
   height: 100%;
 }
-button{
-  margin-left: auto;
-  display: flex !important;
-}
 #back {
   position: absolute;
   background-color: #38c5d875;
@@ -24,7 +20,20 @@ button{
     width: 100%;
   }
 }
+button{
+  margin-left: auto;
+  display: flex !important;
+}
 .card {
+  .buena {
+    background: #00800054 !important;
+    border: 2px solid #28a745 !important;
+    border-radius: 30px !important;
+  }
+  .mala {
+    border: 2px solid #dc3545 !important;
+    border-radius: 30px !important;
+  }
   .card-body {
     padding-left: 3%;
     padding-right: 4%;
@@ -50,10 +59,15 @@ button{
     padding-bottom: 2%;
     .input-group {
       padding-right: 60px;
-      .input-group-text {
+      &-prepend {
+        padding-bottom: 10px;
+      }
+
+      &-text {
         background-color: transparent;
         border: none;
         padding-left: 50px;
+        margin-right: 10px;
       }
       #check {
         height: 20px;
