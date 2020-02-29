@@ -1,18 +1,44 @@
-html,
-body {
-  background-color: bisque;
+.has-search {
+  display: contents;
 }
 
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 1.675rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  filter: opacity(0.2);
+  color: #aaa;
+}
+
+.has-search .form-control {
+  padding-left: 1.675rem;
+}
+
+body {
+  background-color: lightblue;
+}
+body input::before {
+  background: url(/icons/search.svg) no-repeat scroll 15px 10px;
+  content: "";
+}
 body #back {
-  background-color: black;
-  opacity: 0.5;
-  position: fixed;
+  background-color: #38c5d875;
+  z-index: -1;
   height: 100%;
   width: 100%;
+  opacity: 0.7;
 }
 body .row {
   margin: 0;
-  padding: 0;
+}
+body .col {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 body .card {
   display: flex;
@@ -23,22 +49,42 @@ body .card {
 body #icon {
   height: 100px;
 }
-body #hr {
-  border: 1px solid black;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 #left-side {
-  margin-right: 184px;
+  padding: 1%;
+  width: 1060px;
+  height: fit-content;
+  margin-right: auto;
   overflow: hidden;
-  border-radius: 25px;
   position: relative;
   display: flex;
-  margin-left: 184px;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  margin-left: auto;
+  margin-top: 19px;
+  background: aliceblue;
+}
+
+#card {
+  background-color: white;
+  display: inline-flex;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.75);
+}
+#card h6 {
+  font-size: 0.6rem;
+}
+#card .col {
+  text-align: right;
+}
+#card .col #icon {
+  height: 62px;
+  width: 62px;
+  border: 1px solid transparent;
+  border-radius: 45px;
+}
+#card .col #ico {
+  width: max-content;
 }
 
 /*# sourceMappingURL=list.css.map */
